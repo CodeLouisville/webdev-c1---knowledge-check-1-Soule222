@@ -107,6 +107,8 @@ body {
     
 }
 
+
+
 .footer-container {
     background: #1b1b27;
     display: flex;
@@ -295,7 +297,69 @@ footer {
 /* Forms
 ========================================================================== */
 
+.form-content{
+    background: #29326a;
+    justify-content: center;
+}
 
+.form-title {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+.contact-form {
+    display: grid;
+    grid: "firstName lastName" 
+          "email     email" 
+          "message   message" 6em
+          "submit    submit" ;
+    
+    color: #F1F1F1;
+    justify-content: center;
+    column-gap: 3em;
+    row-gap: 1em;
+    padding-bottom: 1em;
+}
+
+.first-name{
+    grid-area: firstName;
+}
+
+.last-name{
+    grid-area: lastName;
+}
+
+.email{
+    grid-area: email;
+}
+
+.email input{
+    flex-grow: 2;
+}
+
+.message {
+    grid-area: message;
+}
+
+.submit-btn {
+    grid-area: submit;
+    min-width: 200px;
+    justify-self: center;
+    background: #f08527;
+    color: #1b1b27;
+    border: 2px solid #f08527;
+    border-radius: 12px;
+}
+
+.submit-btn:hover{
+    background: #74b44a;
+    color: #F1F1F1;
+    border: 2px solid #74b44a;
+    cursor: pointer;
+}
 /* Tables
 ========================================================================== */
 
